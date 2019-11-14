@@ -43,7 +43,7 @@
             <artifactId>jersey-container-grizzly2-servlet</artifactId>
         </dependency>
 
-         <dependency>
+        <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-moxy</artifactId>
         </dependency>
@@ -91,7 +91,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>edu.upc.dsa.Start</mainClass>
+                    <mainClass>edu.upc.dsa.Main</mainClass>
                 </configuration>
             </plugin>
         </plugins>

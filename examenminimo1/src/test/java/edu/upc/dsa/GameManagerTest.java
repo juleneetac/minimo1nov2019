@@ -22,13 +22,21 @@ public class GameManagerTest {
 
 
     @Test
-    public void testAddObjeto() throws Exception {
+    public void testAddObjeto() throws Exception {     //test para añadir un objeto asociado a un usuario
         mm.addObjeto("llave", "u1");
-        Assert.assertEquals(1, mm.listadoObjetos("Julen").size());
+        Assert.assertEquals(4, mm.numerosObjetos("u1"));
 
-        mm.addObjeto("vara", "u2");
-        Assert.assertEquals(2, mm.listadoObjetos("Julen").size());
+        mm.addObjeto("vara", "u1");
+        Assert.assertEquals(5, mm.numerosObjetos("u1"));
     }
+
+    @Test
+    public void testAddUser() throws Exception {   //test para añadir un usuario en el sistema
+        mm.addJugador("r3", "nene", "tene");
+        Assert.assertEquals(2, mm.sizeJugadores());
+
+    }
+
 
     @After
     public void tearDown(){

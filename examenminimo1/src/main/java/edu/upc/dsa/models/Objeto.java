@@ -6,7 +6,6 @@ public class Objeto {
     public Objeto(String nom) {
         this.nombre = nom;
     }
-    public Objeto() {};
 
     public void setNombre(String nom) {
         this.nombre=nom;
@@ -14,6 +13,6 @@ public class Objeto {
     public String getNombre() {
         return this.nombre;
     }
-
+    public Objeto(){} //constructor vacio
 
 }
